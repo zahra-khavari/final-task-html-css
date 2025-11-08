@@ -1,0 +1,311 @@
+@import url(/styles/fonts.css);
+
+/* reset */
+*, *::after , *::before{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    outline: 0;
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+}
+body, input, button,textarea{
+    font-family: vazir;
+    font-feature-settings: 'ss01';
+}
+body{
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+a{
+    text-decoration: none;
+}
+
+/* root variable */
+:root{
+--color-primary: #CC312D;
+--color-secondary:#f7dbda;
+--color-white:#fff;
+--color-input:#F7F7F7;
+--color-text:#1A1814;
+--color-text-secondary:#14141466;
+--color-border:#EBEBEB;
+--color-border-bottom:#E6E6E6;
+--color-quantity-price:#606060;
+--color-hover-input:#a7a3a3;
+}
+.container{
+    max-width: 1280px;
+    padding: 1rem;
+    margin: 0 auto;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 2rem;
+    border: 1.5px solid var(--color-border);
+    padding: 1.6rem 1.3rem;
+    overflow-x: hidden; 
+    column-gap: 1rem;
+}
+.account{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-input);
+    border-radius: 1.5rem;
+    padding: 1.5rem 1.3rem;
+}
+.information__container{
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.title__container{
+    border-bottom:1px solid var(--color-border-bottom);
+    margin-bottom: 1.5rem;
+}
+.title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+.padding-section{
+    padding-bottom: 1rem;
+}
+.account__input{
+    background-color: var(--color-input);
+    border-radius: 3rem;
+    padding: 1rem 1.5rem;
+    border: 0;
+    margin: 0.7rem 0;
+    font-family: vazir;
+}
+.textarea-radius{
+    border-radius: 1.2rem;
+}
+.account__information{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.account label{
+    font-weight: 400;
+    font-size: 14px;
+}
+.row-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+.badge{
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 30px;
+    white-space:nowrap;
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.select-post-way{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.select-address{
+    color: var(--color-primary);
+    font-size: 1.4rem;
+}
+.select-address p::before{
+    content: url(/assets/images/red-plus.svg);
+    padding-left: 1rem;
+}
+.container--price{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 2.5rem;
+}
+.container--post-way{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.4rem;
+}
+.input--wrap{
+    display:flex ;
+    flex-direction: row;
+    gap: 1rem;
+}
+.price__quantity{
+    color: var(--color-quantity-price);
+    font-size: 1rem;
+}
+.container--post-way:hover{
+    cursor: pointer;
+}
+select:hover,textarea:hover,input:hover{
+    border: 1.5px solid var(--color-hover-input);
+}
+select:focus,textarea:focus,input:focus{
+    border: 1.5px solid var(--color-primary);
+}
+select{
+    appearance: none;
+}
+.products--row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem ;
+}
+.products--coulmn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}   
+.products__image{
+    background-color: var(--color-white);
+    border-radius: 1.2rem;
+}
+.picture{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+.font-name{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.font-price{
+    font-size: 1.6rem;
+}
+.font-content{
+    font-size: 1.2rem;
+}
+.products:not(:last-child) {
+    border-bottom:1px solid var(--color-border-bottom);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+.how-many{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.radius-background{
+    background-color: var(--color-white);
+    border-radius: 100%;
+    width:3rem;
+    height: 3rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.how-many img{
+    width:1.6rem;
+    height: 2rem;
+}
+/* total buy */
+.total-buy{
+    background-color: var(--color-white);
+    border-radius: 1.2rem;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.font-post{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.zibal{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.zibal-container{
+    background-color: var(--color-white);
+    border-radius: 1.2rem;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    gap: 0.7rem;
+    height: 8rem;
+    justify-content: space-between;
+}
+/* button */
+.product__pay{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    padding: 1rem 1rem;
+    border: 0;
+    border-radius: 44px;
+    font-size: 1.6rem;
+}
+@media screen and (min-width:768px) {
+    .main{
+    grid-template-columns: 2fr 1fr;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .badge{
+        font-size: 1.2rem;
+    }
+    .select-post-way{
+        font-size: 1.4rem;
+    }
+    .container--post-way{
+        flex-direction: row;
+    }
+}
+@media screen and (min-width:1024px) {
+    .main{
+        grid-template-columns: 2fr 1fr;
+    }
+    .information__container{
+    flex-direction: row;
+    }
+    .title{
+        font-size: 2rem;
+        padding-bottom: 0;
+    }
+    .badge{
+        font-size: 1.2rem;
+    }
+    .select-post-way{
+        flex-direction: row;
+        font-size: 1.4rem;
+        gap: 1rem;
+        white-space: nowrap;
+    }
+    .container--post-way{
+        flex-direction: row;
+        justify-content: space-between;
+        flex: 1;
+    }
+    .product__tag, .products__count{
+        flex-direction: row;
+    }
+    .zibal-container{
+        justify-content: center;
+    }
+}
+

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeawas.ir</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="account">
+          <div class="title__container">
+            <p class="title">اطلاعات کاربری شما</p>
+          </div>
+          <div class="information__title padding-section">اطلاعات تحویل گیرنده</div>
+          <div class="information__container">
+            <div class="account__information">
+              <label for="name">نام و نام خانوادگی</label>
+              <input
+                id="name"
+                class="account__input"
+                type="text"
+                value="رضا جنیدی"
+              />
+            </div>
+            <div class="account__information">
+              <label for="phone">شماره تماس گیرنده</label>
+              <input
+                id="phone"
+                class="account__input"
+                type="text"
+                value="09123456789"
+              />
+            </div>
+          </div>
+          <div class="row-container">
+            <div class="information__title padding-section">آدرس تحویل</div>
+            <div class="select-address">
+              <p>انتخاب آدرس</p>
+            </div>
+          </div>
+          <div class="information__container">
+            <div class="account__information">
+              <label for="province">استان</label>
+              <select class="address account__input" name="#" id="province">
+                <option value="" selected>تهران</option>
+                <option value="">مشهد</option>
+                <option value="">اصفهان</option>
+                <option value="">شیراز</option>
+                <option value="">قم</option>
+                <option value="">تبریز</option>
+                <option value="">کرمان</option>
+              </select>
+            </div>
+            <div class="account__information">
+              <label for="city">شهر</label>
+              <select class="address account__input" name="#" id="city">
+                <option value="" selected>آبعلی</option>
+                <option value="">تهرانسر</option>
+                <option value="">کرج</option>
+                <option value="">پاکدشت</option>
+              </select>
+            </div>
+          </div>
+          <div class="information__container">
+            <div class="account__information">
+              <label for="number">پلاک</label>
+              <input
+                id="number"
+                class="account__input"
+                type="text"
+                value="10"
+              />
+            </div>
+            <div class="account__information">
+              <label for="code">کد پستی</label>
+              <input
+                id="code"
+                class="account__input"
+                type="text"
+                value=" ۳۲۱۲۵۶۳۷۴۹۰"
+              />
+            </div>
+          </div>
+          <div class="account__information padding-section">
+            <label for="post">نشانی پستی</label>
+            <textarea class="account__input textarea-radius" name="#" id="post" cols="30">
+تهران، خیابان ولیعصر، منطقه ۱۲، بلوار کاوه، کوچه ابوذر، پلاک ۱۵</textarea
+            >
+          </div>
+          <div>
+            <div class="title__container row-container">
+              <p class="title information__title">انتخاب نحوه ارسال</p>
+              <div class="badge">3 محصول در سبد خرید</div>
+            </div>
+            <div class="select-post-way ">
+              <div class="container--post-way account__input">
+                <div class="input--wrap font-post">
+                  <input checked type="radio" id="post" class="tipax " name="post"/>
+                  <label for="post">تیپاکس با بیمه (1 تا 3 روز کاری)</label>
+
+                </div>
+                <div class="container--price">
+                  <span>45,000</span>
+                  <span class="price__quantity">تومان</span>
+                </div>
+              </div>
+              <div class="container--post-way account__input">
+                <div class="input--wrap font-post ">
+                  <input type="radio" class="pishtaz" id="pishtaz" name="post"/>
+                  <label for="pishtaz">پست پیشتاز (2 تا 5روز کاری)</label>
+                </div>
+                <div class="container--price">
+                  <span>80,000</span>
+                  <span class="price__quantity">تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="title__container">
+            <span class="title">اطلاعات خرید</span>
+          </div>
+          <div class="products products--row">
+            <div class="products__image">
+              <img src="./assets/images/pic-1.svg" alt="#" class="picture">
+            </div>
+            <div class="product__information">
+              <div class="product__tag products--coulmn">
+                <div class="product__name products--coulmn font-name">
+                  <p class="persian-name">هوگو بوس جاست دیفرنت </p>
+                  <p class="latin-name">Hugo Just Different</p>
+                </div>
+                <div class="product__content font-content">100 میل</div>
+              </div>
+              <div class="product__count products--coulmn">
+                <div class="products--row">
+                  <p class="font-price">1,550,000</p>
+                  <p class="price__quantity">تومان</p>
+                </div>
+                <div class="how-many">
+                  <div class="trash radius-background">
+                    <img src="/assets/images/trash.png" alt="">
+                  </div>
+                  <div class="counts radius-background">1</div>
+                  <div class="plus radius-background">
+                    <img src="/assets/images/black-plus.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="products products--row">
+            <div class="products__image">
+              <img src="./assets/images/pic-2.svg" alt="#" class="picture">
+            </div>
+            <div class="product__information">
+              <div class="product__tag products--coulmn">
+                <div class="product__name products--coulmn font-name">
+                  <p class="persian-name">هوگو بوس جاست دیفرنت </p>
+                  <p class="latin-name">Hugo Just Different</p>
+                </div>
+                <div class="product__content font-content">100 میل</div>
+              </div>
+              <div class="product__count products--coulmn">
+                <div class="products--row">
+                  <p class="font-price">1,550,000</p>
+                  <p class="price__quantity">تومان</p>
+                </div>
+                <div class="how-many">
+                  <div class="trash radius-background">
+                    <img src="/assets/images/trash.png" alt="">
+                  </div>
+                  <div class="counts radius-background">1</div>
+                  <div class="plus radius-background">
+                    <img src="/assets/images/black-plus.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="products products--row">
+            <div class="products__image">
+              <img src="./assets/images/pic-3.svg" alt="#" class="picture">
+            </div>
+            <div class="product__information">
+              <div class="product__tag products--coulmn">
+                <div class="product__name products--coulmn font-name">
+                  <p class="persian-name">هوگو بوس جاست دیفرنت </p>
+                  <p class="latin-name">Hugo Just Different</p>
+                </div>
+                <div class="product__content font-content">100 میل</div>
+              </div>
+              <div class="product__count products--coulmn">
+                <div class="products--row">
+                  <p class="font-price">1,550,000</p>
+                  <p class="price__quantity">تومان</p>
+                </div>
+                <div class="how-many">
+                  <div class="trash radius-background">
+                    <img src="/assets/images/trash.png" alt="">
+                  </div>
+                  <div class="counts radius-background">1</div>
+                  <div class="plus radius-background">
+                    <img src="/assets/images/black-plus.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="total-buy">
+            <div class=" title__container products--coulmn">
+              <div class="products--row ">
+              <div class="font-content">خرید شما:</div>
+              <div class="products--row price__quantity">
+                <div class="font-price">1,450,000</div>
+                <div >تومان</div>
+              </div>
+              </div>
+              <div class="products--row">
+              <div class="font-content">هزینه ارسال</div>
+              <div class="products--row price__quantity">
+                <div class="font-price">0</div>
+                <div >تومان</div>
+              </div>
+              </div>
+            </div>
+            <div class="products--row">
+              <div class="font-content">مبلغ قابل پرداخت</div>
+              <div class="products--row">
+                <div class="font-price">1,450,000</div>
+                <div class="price__quantity">تومان</div>
+              </div>
+            </div>
+          </div>
+          <div class="zibal-container zibal">
+            <div class="zibal__container__image">
+              <img class="zibal__image picture" src="/assets/images/zibal.svg" alt="#">
+            </div>
+            <p>پرداخت امن با کارت‌های عضو شتاب از طریق درگاه زیبال</p>
+          </div>
+          <button class="product__pay">پرداخت و خرید محصول</button>
+        </div>
+      </div>
+  </div>
+  </body>
+</html>
