@@ -8,3 +8,9 @@
     src: url(/assets/fonts/Vazir-Medium.woff2);
     font-weight: 400;
 }
+@font-face {
+  font-family: Vazirmatn UI FD;
+  src: url('/assets/fonts/Vazirmatn-UI-FD-Medium.ttf') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}

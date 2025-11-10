@@ -11,9 +11,9 @@
 html{
     font-size: 62.5%;
 }
-body, input, button,textarea{
+body, input, button,textarea, label, span, input[value]{
     font-family: vazir;
-    font-feature-settings: 'ss01';
+    font-family: Vazirmatn UI FD;
 }
 body{
     font-size: 1.6rem;
